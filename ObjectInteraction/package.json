@@ -1,0 +1,17 @@
+{
+	"author": "NANO",
+	"version": "1.0",
+	"server_scripts": [
+		"server.lua",
+		"objectSettings.lua",
+		"exportedFunctions.lua",
+		"serverSettings.lua"
+	],
+	"client_scripts": [
+		"client.lua",
+		"clientSettings.lua"
+	],
+	"files": [
+		
+	]
+}
