@@ -1,4 +1,8 @@
 # Onset-ObjectInteraction
+![alt text](https://i.ytimg.com/vi/uMztSGMqQF0/maxresdefault.jpg)
+
+Video about the package:
+https://www.youtube.com/watch?v=uMztSGMqQF0&
 
 Hello everyone, this is the first Onset package that I made. Object Interaction is a package that lets you pick objects in order to move them around. You can also store them into your vehicle. Here are some of the functionalities:
 
@@ -16,3 +20,5 @@ The "Advanced interaction system" is a system that only lets you do the action t
 
 * And more *
 This is only the beginning of this package. I think there is a lot of possibilities for the future, as well as optimisation.
+
+# Configuration
