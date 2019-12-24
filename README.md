@@ -78,4 +78,4 @@ Get into the server, spawn an object and pick it up. You can then play with thes
 You will be able to copy and paste the value from the server console to the objectSettings.lua file
 
 # The futur of this package #
-If you have any ideas or things that could be better about the package, feel free to contact me on discord at NANO#9346.
+There is still a bunch of things that need more polishing in this package. If you have any ideas or things that could be better about the package, bugs or anything else, feel free to contact me on discord at NANO#9346.
