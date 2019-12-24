@@ -10,29 +10,16 @@ local showNearestLoadLocation = false
 -- Last vehicle driven by the player. He will be able to see the trunk load location when walking with an object
 local playerCar
 
--- OnDialogSubmit event (TEMPORARY)
-AddEvent("OnDialogSubmit", function(dialog, button)
-    -- Admin menu
-    if dialog == AdminMenu then
-        if button == 1 then
-            CallRemoteEvent("CreateVehicle")
-        elseif button == 2 then
-            CallRemoteEvent("CreateObject")
-        end
-    else
-        return
-    end
-end)
-
 -- OnKeyPress Event
 function OnKeyPress(key)
-    -- G key for the admin menu (TEMPORARY)
-    if key == "G" then
-        Dialog.show(AdminMenu)
-    end
     -- If the E key is pressed, look for available interaction to send to the server.
     if key == "E" then
         SendAdvancedInteraction()
+    end
+
+    -- G key for the admin menu (TEMPORARY)
+    if key == "G" then
+        Dialog.show(AdminMenu)
     end
 end
 AddEvent("OnKeyPress", OnKeyPress)
@@ -74,7 +61,7 @@ function OnRenderHUD()
 end
 AddEvent('OnRenderHUD', OnRenderHUD)
 
--- This event is temporary, right now this is used to patch a bug with object collision.
+-- This event right now is used to patch a bug with object collision.
 --local previousLength = 0
 local objectInHandDetection = true
 function OnGameTick(DeltaSeconds)
@@ -202,6 +189,20 @@ end
 -- ===================================================================
 -- ===================================================================
 -- ===================================================================
+
+-- OnDialogSubmit event (TEMPORARY)
+AddEvent("OnDialogSubmit", function(dialog, button)
+    -- Admin menu
+    if dialog == AdminMenu then
+        if button == 1 then
+            CallRemoteEvent("CreateVehicle")
+        elseif button == 2 then
+            CallRemoteEvent("CreateObject")
+        end
+    else
+        return
+    end
+end)
 
 -- Send the object size to the server and print it to the client logs, usefull for copy-paste
 AddRemoteEvent("GetDim", function(object)
