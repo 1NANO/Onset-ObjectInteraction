@@ -21,4 +21,61 @@ The "Advanced interaction system" is a system that only lets you do the action t
 * And more *
 This is only the beginning of this package. I think there is a lot of possibilities for the future, as well as optimisation.
 
-# Configuration
+# Installation
+
+Simply drag and drop the "ObjectInteraction" folder inside your server "packages" folder and update your server_config.json.
+
+# Configuration and how to use of the package
+
+### objectSettings.lua ###
+This file let you configure all objects, vehicles and animations. Read the comments inside the file in order to know how to add new stuff.
+
+### serverSettings.lua ###
+This file let you configure a couple of option let the minimum distance needed to interact with an object or a vehicle aswell as the despawn system.
+
+### clientSettings.lua ###
+This file let you configure a couple of option for the client.
+
+### exportedFunctions.lua ###
+This file contains all the exported functions that can be used for other package.
+
+### client.lua ###
+Make sure to remove everything that is under the "ADMIN COMMAND" if the server is public
+
+### server.lua ###
+Make sure to remove everything that is under the "ADMIN COMMAND" if the server is public
+
+# Admin command
+These following function/command are inside the package only to add/modify object, vehicle and animation. You will see plenty of useless stuff aswell as command to directly change the position of the attached object. Use those command in order to add new stuff then delete all the lines that are in the "ADMIN COMMAND" section.
+
+### How to add a new object ###
+Get into the server, spawn the object and type /dim while being close to it in order to receive the size of that object. The value will be pasted into your server console so you will be able to copy and paste it into the objectSettings.lua file.
+
+### How to add a new vehicle ###
+Get into the server, spawn the vehicle and play with the following chat command:
+/vw to change the width of the trunk
+/vd to change the depth of the trunk
+/vx to change the x offset of the trunk
+/vy to change the y offset of the trunk
+/vz to change the z offset of the trunk
+/fill to fill the trunk with coca cola cans
+/empty to empty the trunk
+
+You will be able to copy and paste the value from the server console to the objectSettings.lua file
+
+### How to add a new animation ###
+Get into the server, spawn an object and pick it up. You can then play with these command:
+/loopanim "animation" in order to loop an animation
+/loopstop in order to stop the animation looping
+/ox to change the object x offset
+/oy to change the object y offset
+/oz to change the object z offset
+/orx to change the object rx rotation
+/ory to change the object ry rotation
+/orz to change the object rz rotation
+/bone to change the bone that the object is attached to
+
+You will be able to copy and paste the value from the server console to the objectSettings.lua file
+
+# The futur of this package #
+If you have any ideas or things that could be better about the package, feel free to contact me on discord at NANO#9346.
