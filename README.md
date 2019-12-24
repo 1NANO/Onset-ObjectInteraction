@@ -25,6 +25,9 @@ This is only the beginning of this package. I think there is a lot of possibilit
 
 Simply drag and drop the "ObjectInteraction" folder inside your server "packages" folder and update your server_config.json.
 
+# !!!NOTE!!!
+This package currently use dialogui in order to spawn random object and vehicle for testing purposes.
+
 # Configuration and how to use of the package
 
 ### objectSettings.lua ###
@@ -40,7 +43,7 @@ This file let you configure a couple of option for the client.
 This file contains all the exported functions that can be used for other package.
 
 ### client.lua ###
-Make sure to remove everything that is under the "ADMIN COMMAND" if the server is public
+Make sure to remove everything that is under the "ADMIN COMMAND" aswell as all the (TEMPORARY) stuff if the server is public
 
 ### server.lua ###
 Make sure to remove everything that is under the "ADMIN COMMAND" if the server is public
